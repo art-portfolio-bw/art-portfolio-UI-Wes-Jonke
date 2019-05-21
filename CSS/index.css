@@ -7,20 +7,17 @@ body {
   line-height: 1.5;
   text-align: center;
 }
-
 nav {
-  display: flex;
+  display:inline-block;
   width: 100%;
   height: 150px;
   margin-top: 1.5em;
 }
-
 .logo{
-  width: 90%;
+  width: 70%;
   height: 75px;
   margin-bottom: 20px;
 }
-
  nav a{
   text-decoration: none;
   color: #484A51;
@@ -29,22 +26,18 @@ nav {
   padding: 0.5em .5em;
   
 }
-
 img{
   width: 100%;
   height: auto;
 }
-
 h1, h2, h3 {
   margin:0;
   padding: .5em 0;  
 }
-
 p{
   margin:0;
   padding: .5em 0;
 }
-
 .btn{
   display: inline-block;
   margin: 5.5em 0 0 0;
@@ -55,22 +48,18 @@ p{
   border: 1px solid #313237;
   border-radius: 4px; 
 }
-
 .btn:hover{
   background: #00CEE5;
   color: white;
 }
-
 #showcase {
   min-height: 400px;
   color:#484A51;
   text-align: center;
 }
-
 #showcase p{
   color: #484A51;
 }
-
 #showcase .bg-image{
   position: absolute;
   background: white url(/img/background-calm-clouds-747964.jpg);
@@ -82,20 +71,16 @@ p{
   z-index: -1;
   opacity: .6;
   margin-top: 1em;
-
 }
-
 #showcase h1{
   padding-top: 35px;
   padding-bottom: 0;
 }
-
 #showcase .content-wrap,
 #section-centerTop
 {
   padding: .5em 1.5em;
 }
-
 #section-features-all,
 #section-centerTop,
 #section-features-left,
@@ -106,9 +91,7 @@ p{
   background: rgba(191, 238, 243, 0.288);
   color: #313237;
   margin: 1em 0;
-
 }
-
 #section-features-all ul,
 #section-features-left ul,
 #section-features-right ul{
@@ -116,10 +99,11 @@ list-style: none;
 margin: 0;
 padding: 0;
 }
-
-
 #section-centerTop{
   margin-top: 2.2em;
+}
+#section-centerTop h2{
+  font-family: 'Anton', sans-serif;
 }
 #section-bottomCenter{
   border-top: 1px solid black;
