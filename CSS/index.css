@@ -1,60 +1,127 @@
 body {
   margin:0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #333;
-  color: white;
+  font-family: 'kodchasan', sans-serif;
+  background: white;
+  color: #484A51;
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
 }
-header nav a{
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  margin-top: 1.5em;
+}
+
+.logo{
+  width: 90%;
+  height: 75px;
+  margin-bottom: 20px;
+}
+
+ nav a{
   text-decoration: none;
-  color: white;
+  color: #484A51;
+  border: 1px solid #313237;
+  border-radius: 4px;
+  padding: 0.5em .5em;
+  
 }
 
 img{
-  display: block;
   width: 100%;
   height: auto;
 }
+
 h1, h2, h3 {
   margin:0;
-  padding: 1em 0;  
+  padding: .5em 0;  
 }
+
+p{
+  margin:0;
+  padding: .5em 0;
+}
+
 .btn{
   display: inline-block;
-  margin: .5em 0;
-  background: #333;
-  color: white;
+  margin: 5.5em 0 0 0;
+  background: #1AE7FF;
+  color: 313237;
   text-decoration: none;
-  padding: 1em 2em ;
-  border: 1px solid #666;
+  padding: .5em 2em ;
+  border: 1px solid #313237;
   border-radius: 4px; 
 }
+
 .btn:hover{
-  background: #eaeaea;
-  color:#333;
+  background: #00CEE5;
+  color: white;
 }
+
 #showcase {
-  min-height: 450px;
-  color:white;
+  min-height: 400px;
+  color:#484A51;
   text-align: center;
 }
+
+#showcase p{
+  color: #484A51;
+}
+
 #showcase .bg-image{
   position: absolute;
-  background: #333 url(https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background: white url(/img/background-calm-clouds-747964.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 450px;
+  height: 400px;
   z-index: -1;
-  opacity: 0.6;
+  opacity: .6;
+  margin-top: 1em;
+
 }
+
 #showcase h1{
-  padding-top: 100px;
+  padding-top: 35px;
   padding-bottom: 0;
 }
-#showcase .content-wrap{
-  padding: 0 1.5em;
+
+#showcase .content-wrap,
+#section-centerTop
+{
+  padding: .5em 1.5em;
+}
+
+#section-features-all,
+#section-centerTop,
+#section-features-left,
+#section-features-right,
+#section-center,
+#section-bottomCenter{
+  padding: 1em 2em;
+  background: rgba(191, 238, 243, 0.288);
+  color: #313237;
+  margin: 1em 0;
+
+}
+
+#section-features-all ul,
+#section-features-left ul,
+#section-features-right ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+
+#section-centerTop{
+  margin-top: 2.2em;
+}
+#section-bottomCenter{
+  border-top: 1px solid black;
+  margin-bottom: 0;
 }
