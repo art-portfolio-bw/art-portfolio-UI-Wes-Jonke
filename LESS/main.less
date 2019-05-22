@@ -1,0 +1,127 @@
+#section-centerTop{
+  margin-top: 2.2em;
+}
+
+#section-features-all,
+#section-centerTop,
+#section-features-left,
+#section-features-right,
+#section-center
+{
+  padding: 1em 2em;
+  background: rgba(191, 238, 243, 0.288);
+  color: #313237;
+  margin: 1em 0;
+}
+
+#section-features-all ul,
+#section-features-left ul,
+#section-features-right ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#mainSiteImg{
+  max-width: 100%;
+  height: auto;
+}
+
+#section-features-left ,
+#section-features-right{
+display: none;
+}
+
+@media @mobile {
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    li{
+      display: flex;
+      flex-flow: column;
+      flex-wrap: wrap;
+      width: 90%;
+      height: auto;
+      border: 1px solid #666769;
+      border-radius: 4px;
+      box-shadow: 5px 3px 3px rgb(192, 222, 231);
+      margin:.25em;
+      h3{
+        margin-top:1em;
+        padding:0;
+      }
+      p{
+        margin:1em;
+        padding:0;
+      }
+    }
+  }
+}
+
+
+
+#section-features-all{
+  @media @tablet {
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      li{
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        width: 45%;
+        height: auto;
+        border: 1px solid #666769;
+        border-radius: 4px;
+        box-shadow: 5px 3px 3px rgb(192, 222, 231);
+        margin:.25em;
+        h3{
+          margin-top:1em;
+          padding:0;
+        }
+        p{
+          margin:1em;
+          padding:0;
+        }
+      }
+    }
+  }
+}
+
+#section-features-all{
+  @media @desktop {
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      li{
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        width: 32%;
+        height: auto;
+        border: 1px solid #666769;
+        border-radius: 4px;
+        box-shadow: 5px 3px 3px rgb(192, 222, 231);
+        margin:.25em;
+        h3{
+          margin-top:1em;
+          padding:0;
+        }
+        p{
+          margin:3em 1em;
+          padding:0;
+        }
+      }
+    }
+  }
+}
+strong{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
