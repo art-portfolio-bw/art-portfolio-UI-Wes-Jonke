@@ -104,7 +104,7 @@ p {
     padding: 0;
   }
 }
-@media (min-width: 921px) and (max-width: 2000px) {
+@media (min-width: 921px) and (max-width: 2500px) {
   #section-features-all ul {
     display: flex;
     flex-wrap: wrap;
@@ -134,26 +134,67 @@ p {
 strong {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+.featureContainer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.featureContainer .featureCard {
+  flex-flow: wrap;
+  border: 1px solid #666769;
+  box-shadow: 5px 3px 3px #c0dee7;
+  border-radius: 4px;
+  width: 300px;
+  height: 550px;
+}
+.featureContainer .featureCard img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid black;
+}
+.cardText {
+  justify-content: center;
+  width: 100%;
+}
+.feature {
+  margin: 1em 0.5em;
+}
 @media (min-width: 0px) and (max-width: 591px) {
   nav {
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 0px) and (max-width: 591px) {
+  nav > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
   }
 }
 @media (min-width: 0px) and (max-width: 591px) {
   nav a {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #484A51;
     border: 1px solid #313237;
     border-radius: 4px;
     margin: 0.5em 0;
+    width: 100%;
   }
 }
 @media (min-width: 0px) and (max-width: 591px) {
   .logo {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 75px;
     margin-bottom: 20px;
   }
@@ -162,6 +203,7 @@ strong {
   nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 }
@@ -178,14 +220,16 @@ strong {
   }
 }
 @media (min-width: 592px) and (max-width: 920px) {
-  nav.logo {
-    display: inline-block;
-    width: 50%;
+  nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     height: auto;
     margin: 1em 0%;
   }
 }
-@media (min-width: 921px) and (max-width: 2000px) {
+@media (min-width: 921px) and (max-width: 2500px) {
   nav {
     display: flex;
     align-items: center;
@@ -193,7 +237,7 @@ strong {
     width: 100%;
   }
 }
-@media (min-width: 921px) and (max-width: 2000px) {
+@media (min-width: 921px) and (max-width: 2500px) {
   nav a {
     display: inline;
     justify-content: center;
@@ -205,7 +249,7 @@ strong {
     padding: 0 1em;
   }
 }
-@media (min-width: 921px) and (max-width: 2000px) {
+@media (min-width: 921px) and (max-width: 2500px) {
   .logo {
     display: flex;
     flex-wrap: nowrap;
@@ -220,16 +264,28 @@ strong {
   align-items: center;
   padding: 1em 2em;
   background: rgba(191, 238, 243, 0.288);
-  color: #313237;
+  color: #444242fa;
   margin: 1em 0;
+  background-image: url(/img/alpine-alps-calm-753325.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+#section-bottomCenter h3 {
+  border: 1px solid #7b7d81;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  box-shadow: 5px 3px 3px #c0dee7;
 }
 #footerBtn {
   display: flex;
   justify-content: center;
   width: 30%;
-  margin: 3em 0 0 0;
+  margin: 1em 0 0 0;
   background: #1AE7FF;
-  color: 313237;
+  color: #313237;
   text-decoration: none;
   padding: 0.5em 2em;
   border: 1px solid #313237;
@@ -242,23 +298,45 @@ strong {
 #copyright {
   display: flex;
   justify-content: center;
-  margin-top: 3em;
-  border: 1px solid #666769;
+  margin-top: 1em;
+  border: 1px solid #7b7d81;
   border-radius: 4px;
   box-shadow: 5px 3px 3px #c0dee7;
   width: 25%;
+  color: black;
+  font-weight: bold;
 }
 #address {
   width: 100%;
-  border: 1px solid #666769;
+  border: 1px solid #7b7d81;
   border-radius: 4px;
   box-shadow: 5px 3px 3px #c0dee7;
-  margin-top: 2em;
+  margin-top: 1em;
+  color: black;
+  font-weight: bold;
+}
+@media (min-width: 0px) and (max-width: 591px) {
+  #section-bottomCenter #copyright {
+    width: 70%;
+  }
+  #section-bottomCenter #footerBtn {
+    width: 70%;
+  }
+}
+@media (min-width: 592px) and (max-width: 920px) {
+  #section-bottomCenter #copyright {
+    width: 50%;
+  }
+}
+@media (min-width: 921px) and (max-width: 2500px) {
+  #section-bottomCenter #copyright {
+    width: 40%;
+  }
 }
 @media (min-width: 0px) and (max-width: 591px) {
   #headerBtn {
     display: inline-block;
-    margin: 5em 0 0 0;
+    margin: 2em 0 0 0;
     background: #1AE7FF;
     color: 313237;
     text-decoration: none;
@@ -319,7 +397,7 @@ strong {
 @media (min-width: 592px) and (max-width: 920px) {
   #headerBtn {
     display: inline-block;
-    margin: 13em 0 0 0;
+    margin: 9em 0 0 0;
     background: #1AE7FF;
     color: 313237;
     text-decoration: none;
@@ -376,10 +454,10 @@ strong {
     padding: 0.5em 1.5em;
   }
 }
-@media (min-width: 921px) and (max-width: 2000px) {
+@media (min-width: 921px) and (max-width: 2500px) {
   #headerBtn {
     display: inline-block;
-    margin: 5em 0 0 0;
+    margin: 3em 0 0 0;
     background: #1AE7FF;
     color: 313237;
     text-decoration: none;
@@ -392,47 +470,90 @@ strong {
     color: white;
   }
 }
-@media (min-width: 921px) and (max-width: 2000px) {
+@media (min-width: 921px) and (max-width: 2500px) {
   #showcase {
     min-height: 450px;
     color: #484A51;
     text-align: center;
   }
 }
-@media (min-width: 921px) and (max-width: 2000px) {
+@media (min-width: 921px) and (max-width: 2500px) {
   #showcase p {
     color: #484A51;
   }
 }
-@media (min-width: 921px) and (max-width: 2000px) {
+@media (min-width: 921px) and (max-width: 2500px) {
   #showcase .bg-image {
     position: absolute;
     background: white url(/img/background-calm-clouds-747964.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 98%;
+    width: 97%;
     height: 450px;
     z-index: -1;
     opacity: 0.6;
   }
 }
-@media (min-width: 921px) and (max-width: 2000px) {
+@media (min-width: 921px) and (max-width: 2500px) {
   #showcase h1 {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-@media (min-width: 921px) and (max-width: 2000px) {
+@media (min-width: 921px) and (max-width: 2500px) {
   #showcase p {
     padding-top: 0;
     padding-bottom: 0;
     font-size: 0.9em;
   }
 }
-@media (min-width: 921px) and (max-width: 2000px) {
+@media (min-width: 921px) and (max-width: 2500px) {
   #showcase .content-wrap,
   #section-centerTop {
     padding: 0.5em 1.5em;
   }
+}
+Main {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  margin-top: 1em;
+}
+Main .flexContainer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+Main .flexContainer .card {
+  margin: 1em 0em;
+}
+Main .flexContainer .card .cardContent {
+  flex-flow: wrap;
+  border: 1px solid #666769;
+  box-shadow: 5px 3px 3px #c0dee7;
+  border-radius: 4px;
+}
+Main .flexContainer .card .cardContent img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid black;
+}
+.linkButton {
+  display: inline-block;
+  margin: 1em 0.25em;
+  background: #1AE7FF;
+  color: 313237;
+  text-decoration: none;
+  padding: 0.5em 0.5em;
+  border: 1px solid #313237;
+  border-radius: 4px;
+}
+.linkButton:hover {
+  background: #00CEE5;
+  color: white;
 }
