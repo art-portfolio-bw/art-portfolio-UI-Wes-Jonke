@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="script" href="/JavaScript/index.js">
+<link rel="stylesheet" href="/CSS/slideshow.css">
+<link rel="stylesheet" href="/CSS/index.css">
+
+
+</head>
+<body>
+
+    <nav>
+        <img class='logo' src="\img\LOGO.png"alt="Company Logo">
+        <div id='btnDiv'>
+            <a class='navBtn' href="/index.html">Home</a>
+            <a class='navBtn' href="/about.html">About Us</a>
+            <a class='navBtn active' href="/popular.html">Popular Posts</a>
+            <a class='navBtn' href="https://fotograph-app.netlify.com/sign-up">Sign Up</a>
+            <a class='navBtn' href="https://fotograph-app.netlify.com/login">Login</a>
+        </div>
+      </nav>
+  
+    <header class='grid' id='showcase'>
+      <div class='bg-image'></div> 
+      <div class="content-wrap">
+        <h1>Check out some Popular Posts!</h1>
+        
+        <a href="https://fotograph-app.netlify.com/sign-up" id='headerBtn' class='btn'>Sign up now!</a>
+      </div>
+    </header>
+
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img class='slide' src="img\arch-bridge-clouds-814499.jpg" style="width:100%">
+      
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img class='slide' src="img\beach-blur-boardwalk-132037.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img class='slide' src="img\beautiful-daylight-environment-709552.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img class='slide' src="img\clouds-country-daylight-371633.jpg" style="width:100%">
+    </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img class='slide' src="img\dawn-hd-wallpaper-landscape-36717.jpg" style="width:100%">
+      </div>
+
+        <div class="mySlides fade">
+           <div class="numbertext">6 / 6</div>
+          <img class='slide' src="img\adventure-calm-clouds-414171 (1).jpg" style="width:100%">
+        </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094 &#10043;</a>
+    <a class="next" onclick="plusSlides(1)">&#10043 &#10095;</a>
+    
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+</div>
+
+
+
+<footer class="grid showcase" id="section-bottomCenter"> 
+    <div class="leftFooterr">
+
+    </div>
+    
+    <div class ='centerContent'>
+      <div class="content-wrap">
+        <h3 class="card-title">Reach Out To Us!</h3>
+        <h3 id= 'address'>Info@Fotograph.com</h3>
+        
+        
+      </div>
+    </div>
+    <a href="https://github.com/Wjonke" id='footerBtn' class='btn'>GitHub</a>
+    <a href="https://twitter.com/JonkeWesley" id='footerBtn' class='btn'>Twitter</a>
+
+    <a href="https://www.linkedin.com/in/wes-jonke-05409861/" id='footerBtn' class='btn'>LinkedIn</a>
+    <a href="/about.html" id='footerBtn' class='btn'>About the Dev's</a>
+    <p id='copyright'>Created by Wes Jonke  &copy  2019</p>
+ 
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+    
+<!--why wont this work on separate JS sheet?-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
