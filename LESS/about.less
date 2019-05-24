@@ -1,0 +1,49 @@
+Main{
+  display: flex;
+  flex-direction: row;
+  flex-flow:wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  margin-top: 1em;
+
+
+  .flexContainer{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+    .card{
+      margin: 1em 0em;
+     
+      .cardContent{
+        flex-flow: wrap;
+        border: 1px solid #666769;
+        box-shadow: 5px 3px 3px rgb(192, 222, 231);
+        border-radius: 4px;
+
+        .pic{
+          height: 300px;
+          width: 300px;
+          object-fit: cover;
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+}
+
+.linkButton{
+    display: inline-block;
+    margin: 1em .25em;
+    background: #1AE7FF;
+    color: 313237;
+    text-decoration: none;
+    padding: .5em .5em ;
+    border: 1px solid #313237;
+    border-radius: 4px; 
+    &:hover{
+      background: #00CEE5;
+      color: white;
+  }
+
+}

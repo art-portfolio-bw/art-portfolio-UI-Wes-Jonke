@@ -1,23 +1,37 @@
 nav {
   @media @mobile {
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+}
+nav > div{
+  @media @mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
 }
  nav a{
   @media @mobile {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #484A51;
     border: 1px solid #313237;
     border-radius: 4px;
     margin: .5em 0;
+    width: 100%;
   }
 }
 .logo{
   @media @mobile {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 75px;
     margin-bottom: 20px;
   }
@@ -28,6 +42,7 @@ nav {
   @media @tablet {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 
   }
@@ -45,10 +60,12 @@ nav {
     padding: 0 1em;
   }
 }
-nav.logo{
+nav .logo{
   @media @tablet {
-    display: inline-block;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     height: auto;
     margin: 1em 0%;
   }
@@ -72,8 +89,10 @@ nav {
     border-radius: 4px;
     margin: .5em 0;
     padding: 0 1em;
+    
+    }
   }
-}
+
 .logo{
   @media @desktop {
     display: flex;

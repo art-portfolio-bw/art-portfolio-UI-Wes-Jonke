@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/CSS/index.css">
-  <link rel="script" href="/JavaScript/index.js">
+  <link rel="script" href="JavaScript\index.js">
   <link href="https://fonts.googleapis.com/css?family=Anton|Kodchasan&display=swap" rel="stylesheet">
 
   <title>FotoGraph Marketing Page</title>
@@ -13,11 +13,13 @@
 <body>
     <nav>
       <img class='logo' src="\img\LOGO.png"alt="Company Logo">
-      <div>
-          <a href="/HTML/about.html">About Us</a>
-          <a href="#section-bottomCenter">Contact us</a>
-          <a href="https://fotograph-app.netlify.com">Sign Up</a>
-          <a href="https://fotograph-app.netlify.com">Login</a>
+
+      <div id='btnDiv'>
+          <a class='navBtn active' href="/index.html">Home</a>
+          <a class='navBtn' href="/about.html">About Us</a>
+          <a class='navBtn' href="/popular.html">Popular Posts</a>
+          <a class='navBtn' href="https://fotograph-app.netlify.com/sign-up">Sign Up</a>
+          <a class='navBtn' href="https://fotograph-app.netlify.com/login">Login</a>
       </div>
     </nav>
 
@@ -25,123 +27,102 @@
     <div class='bg-image'></div> 
     <div class="content-wrap">
       <h1>Welcome to FotoGraph!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium iure illum inventore atque dignissimos in eius eum beatae facilis. Explicabo.</p>
-      <a href="" id='headerBtn' class='btn'>Sign up now!</a>
+      
+      <a href="https://fotograph-app.netlify.com/sign-up" id='headerBtn' class='btn'>Sign up now!</a>
     </div>
   </header>
 
   <main class='main'>
 
-      <section class='grid' id="section-centerTop">
-          <div class="content-wrap">
-            <h2 class='cardTag'>Why FotoGraph ?</h2>
-            <p>explanitory paragraph on why an artist should choose us!!!</p>
-          </div>
-      </section>
-
       <section class='grid' id="section-features-all">
         <div class="content-wrap">
           <h2 class='cardTag'>Key Features</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus exercitationem sint, beatae vero, rem adipisci hic nihil aperiam atque quasi </p>
-          <ul>
-            <li>
-              <h3>Create a Professional Portfolio</h3>
-              <p>Our site will allow you to display your work in a professional portfolio. </p>
-            </li>
-            <li>
-              <h3>Add your Personalized Descriptions</h3>
-              <p>Add a customizable description to each piece and let the world know what your vision was.</p>
-            </li>
-            <li>
-              <h3> Receive "Likes" And Comments</h3>
-              <p>FotoGraph has a like feature for viewers to select that will help in the promotion of that piece site-wide. Our site will feature the top rated pieces right on our home page</p>
-            </li> 
-            <li>
-                <h3>Connect With Others In The Community</h3>
-                <p>Connect with other artists in your community and leave comments on their work, give "likes" and help promote their work as well.</p>
-            </li>
-            <li>
-                <h3>Display Your Work In A Professional Space</h3>
-                <p>You will be proud to display your work on our website, whether it’s in a client’s board room or showing off to colleges. This is what you do for a living as a professional photographer. Be proud of your work and trust us to deliver it with <strong>impact</strong>.</p>
-            </li>
-            <li>
-                <h3>Get Away From The Social Media Stigma</h3>
-                <p>We deliver a medium free of a non-professional atmosphere. This is not a place for pictures of your besties or what you had for lunch today. This is your livelihood, your passion. Display it in a place free from the stigma of social networking sites. </p>
-            </li> 
-          </ul>
+          <p><p>We solve the problem of not having professional portfolio display platform, you will be proud to display your work on our website, whether it’s in a client’s board room or showing off to colleges. Be proud of your work and trust us to deliver it with <strong>impact.</strong></p></p>
+         
         </div>
       </section>
 
-    <section class='grid' id="section-features-left">
-      <div class="content-wrap">
-        <h2 class='cardTag'>left Feature Bar</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus exercitationem sint, beatae vero, rem adipisci hic nihil aperiam atque quasi amet odit non dolorum</p>
-        <ul>
-          <li>
-            <h3>Feature</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, assumenda?</p>
-          </li>
-          <li>
-            <h3>Feature</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, assumenda?</p>
-          </li>
-          <li>
-            <h3>Feature</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, assumenda?</p>
-          </li> 
-        </ul>
-      </div>
-    </section>
-
-    <section class='grid' id="section-features-right">
-        <div class="content-wrap">
-          <h2 class='cardTag'>Right Feature Bar</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus exercitationem sint, beatae vero, rem adipisci hic nihil aperiam atque quasi amet odit non dolorum</p>
-          <ul>
-            <li>
-              <h3>Feature</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, assumenda?</p>
-            </li>
-            <li>
-              <h3>Feature</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, assumenda?</p>
-            </li>
-            <li>
-              <h3>Feature</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, assumenda?</p>
-            </li> 
-          </ul>
-        </div>
-      </section>
-    
-    <section class="grid" id="section-center">
-
-          <div class='card'>
-            <div class="card-content">
-              <h3 class="card-title">Main site example</h3>
-              <p>Brief statement about what this site is all about</p>
-              <img id='mainSiteImg' src="\img\landingPage.png" alt="Main Site landing-page">
+      <div class="featureContainer">
+          <div class='feature' id="card1">
+            <div class="featureCard">
+              <a ><img class="pic" src="img/displayEx.JPG" alt=""></a>
+              <div class='cardText'>
+                <div class="name">
+                  <h3>Create a Professional Portfolio</h3>
+                </div>
+                <div> 
+                  <p>Our site will allow you to display your work in a professional portfolio.</p>
+                  <br> 
+                </div>
+              </div>
             </div>
           </div>
-
-    </section>
-
+    
+          <div class='feature' id="card2">
+            <div class="featureCard">
+              <a class="pic"><img class="pic" src="img/descrEx.JPG" alt=""></a>
+              <div class='cardText'>
+                <div class="name">
+                  <h3>Add Personalized Descriptions</h3>
+                </div>
+                <div>  
+                  <p>Add a customizable description to each piece and let the world know what your vision was</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class='feature' id="card3">
+              <div class="featureCard">
+                <a class="pic"><img class="pic" src="img/likesEx.JPG" alt=""></a>
+                <div class='cardText'>
+                  <div class="name">
+                    <h3>Receive "Likes" And Comments</h3>
+                  </div>
+                  <div>  
+                    <p>FotoGraph has a like feature for viewers to select that will help in the promotion of that piece site-wide. Our site will feature the top rated pieces right on our home page.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class='feature' id="card4">
+                <div class="featureCard">
+                  <a class="pic"><img class="pic" src="img/selfieEx.jpg" alt=""></a>
+                  <div class='cardText'>
+                    <div class="name">
+                      <h3>Get Away From The Social Media Stigma</h3>
+                    </div>
+                    <div>  
+                      <p>We deliver a medium free of a non-professional atmosphere. This is not a place for pictures of your besties or what you had for lunch today. This is your livelihood, your passion. Display it in a place free from the stigma of social networking sites. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              
+        </div>
   </main>
 
   <footer class="grid showcase" id="section-bottomCenter"> 
-    <div class="content-wrap">
-        <h1 class="card-title">Reach Out To Us!</h1>
-        <h3 id= 'address'>
-          99879 Spooner St.<br>
-          Somewhere City <br>
-          Some State <br>
-          Some zip <br>
-        </h3>
+    <div class="leftFooterr">
+
+    </div>
+    
+    <div class ='centerContent'>
+      <div class="content-wrap">
+        <h3 class="card-title">Reach Out To Us!</h3>
+        <h3 id= 'address'>Info@Fotograph.com</h3>
+        
         
       </div>
     </div>
-    <a href="HTML/about.html" id='footerBtn' class='btn'><strong>Meet the Dev's!</strong></a>
-    <h3 id='copyright'>Created by Wes Jonke  &copy  2019</h3>
+    <a href="https://github.com/Wjonke" id='footerBtn' class='btn'>GitHub</a>
+    <a href="https://twitter.com/JonkeWesley" id='footerBtn' class='btn'>Twitter</a>
+
+    <a href="https://www.linkedin.com/in/wes-jonke-05409861/" id='footerBtn' class='btn'>LinkedIn</a>
+    <a href="/about.html" id='footerBtn' class='btn'>About the Dev's</a>
+    <p id='copyright'>Created by Wes Jonke  &copy  2019</p>
  
   </footer>
 
